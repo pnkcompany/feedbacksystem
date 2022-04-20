@@ -5,22 +5,19 @@ import FeedbackStats from './components/FeedbackStats'
 import FeedbackForm from './components/FeedbackForm'
 import { FeedbackProvider } from './context/FeedbackContext'
 import './App.css'
+import './index.css'
+
 import Login from './components/Login'
 import Register from './components/Register'
 import Home from './components/Home'
 import Profile from './components/Profile'
 import Product from './components/Product'
 
-import BoardUser from './components/BoardUser'
-import BoardModerator from './components/BoardModerator'
-import BoardAdmin from './components/BoardAdmin'
 import AuthService from './services/auth.service'
 import EventBus from './common/EventBus'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const App = () => {
-  const [showModeratorBoard, setShowModeratorBoard] = useState(false)
-  const [showAdminBoard, setShowAdminBoard] = useState(false)
   const [currentUser, setCurrentUser] = useState(undefined)
 
   useEffect(() => {
@@ -28,8 +25,6 @@ const App = () => {
 
     if (user) {
       setCurrentUser(user)
-      setShowModeratorBoard(user.roles.includes('ROLE_MODERATOR'))
-      setShowAdminBoard(user.roles.includes('ROLE_ADMIN'))
     }
 
     EventBus.on('logout', () => {
@@ -43,8 +38,6 @@ const App = () => {
 
   const logOut = () => {
     AuthService.logout()
-    setShowModeratorBoard(false)
-    setShowAdminBoard(false)
     setCurrentUser(undefined)
   }
 
@@ -101,7 +94,7 @@ const App = () => {
             </div>
           )}
         </nav>
-        <div className='container mt-3'>
+        <div className='container_1'>
           <Routes>
             <Route path='/home' element={<Home />} />
             <Route path='/login' element={<Login />} />

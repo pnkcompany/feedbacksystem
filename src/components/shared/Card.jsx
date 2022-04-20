@@ -5,10 +5,10 @@ function Card({ children, reverse }) {
 
   return (
     <div
-      className='card'
+      className='card_1'
       style={{
-        backgroundColor: reverse ? 'rgba(0,0,0,0.4)' : '#fff',
-        color: reverse ? '#fff' : '#000',
+        backgroundColor: reverse ? 'rgba(1,2,0,0.5)' : '#fff',
+        color: reverse ? '#ffff' : '#040',
       }}
     >
       {children}
@@ -17,7 +17,7 @@ function Card({ children, reverse }) {
 }
 
 Card.defaultProps = {
-  reverse: false,
+  reverse: true,
 }
 
 Card.propTypes = {

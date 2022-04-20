@@ -11,13 +11,6 @@ export const FeedbackProvider = ({ children }) => {
     edit: false,
   })
 
-  // Fetch feedback
-  const fetchFeedback = async (id) => {
-    const response = await UserService.getReviews(id)
-    setFeedback((old) => [...old, ...response.data])
-    setIsLoading(false)
-  }
-
   // Add feedback
   const addFeedback = async (newFeedback) => {
     const response = await UserService.sendReview(newFeedback)

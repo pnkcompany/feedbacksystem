@@ -1,60 +1,6 @@
-label {
-  display: block;
-  margin-top: 10px;
-}
-
-.card-container.card {
-  max-width: 350px !important;
-  padding: 40px 40px;
-}
-
-.card {
-  background-color: #f7f7f7;
-  padding: 20px 25px 30px;
-  margin: 0 auto 25px;
-  margin-top: 50px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.profile-img-card {
-  width: 96px;
-  height: 96px;
-  margin: 0 auto 10px;
-  display: block;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-}
-
-.product {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 1rem 0;
-  margin: 1rem 0;
-}
-
-.product-detail {
-  padding: 0 10rem;
-}
-
-.product-price {
-  font-weight: bold;
-  font-size: 140%;
-}
-header {
-  padding: 1rem 0;
-}
-
-.main-content {
-  margin-top: 2rem;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
 
 * {
   box-sizing: border-box;
@@ -73,7 +19,7 @@ ul {
   list-style: none;
 }
 
-.container {
+.container_1 {
   max-width: 768px;
   margin: auto;
   padding: 0 20px;
@@ -88,7 +34,7 @@ header {
   margin-bottom: 30px;
 }
 
-.card {
+.card_1 {
   background-color: #fff;
   color: #333;
   border-radius: 15px;
@@ -97,12 +43,12 @@ header {
   position: relative;
 }
 
-.card.reverse {
+.card_1.reverse {
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
 }
 
-.card h2 {
+.card_1 h2 {
   font-size: 22px;
   font-weight: 600;
   text-align: center;
@@ -125,6 +71,7 @@ header {
   text-align: center;
   border-radius: 50%;
   font-size: 19px;
+  color: black;
   border: 1px #eee solid;
   transition: 0.3s;
 }
@@ -201,7 +148,7 @@ input:focus {
   right: 40px;
 }
 
-.btn {
+.btn_1 {
   color: #fff;
   border: 0;
   border-radius: 8px;
@@ -211,26 +158,26 @@ input:focus {
   cursor: pointer;
 }
 
-.btn-primary {
+.btn_1-primary {
   background-color: #202142;
 }
 
-.btn-secondary {
+.btn_1-secondary {
   background: #ff6a95;
 }
 
-.btn:hover {
+.btn_1:hover {
   transform: scale(0.98);
   opacity: 0.9;
 }
 
-.btn:disabled {
+.btn_1:disabled {
   background-color: #cccccc;
   color: #333;
   cursor: auto;
 }
 
-.btn:disabled:hover {
+.btn_1:disabled:hover {
   transform: scale(1);
   opacity: 1;
 }
@@ -284,4 +231,61 @@ input:focus {
     width: 80%;
   }
 }
- 
+
+
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.card-container.card {
+  max-width: 350px !important;
+  padding: 40px 40px;
+}
+
+.card {
+  background-color: #f7f7f7;
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.product-detail {
+  padding: 0 10rem;
+}
+
+.product-price {
+  font-weight: bold;
+  font-size: 140%;
+}
+header {
+  padding: 1rem 0;
+}
+
+.main-content {
+  margin-top: 2rem;
+}

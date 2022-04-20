@@ -66,7 +66,7 @@ function FeedbackForm() {
 
   // NOTE: pass selected to RatingSelect so we don't need local duplicate state
   return (
-    <Card>
+    <Card className='card_1'>
       <form onSubmit={handleSubmit}>
         <h2>How would you rate your service with us?</h2>
         <RatingSelect select={setRating} selected={rating} />
