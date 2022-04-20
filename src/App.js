@@ -94,7 +94,7 @@ const App = () => {
             </div>
           )}
         </nav>
-        <div className='container_1'>
+        <div className='container'>
           <Routes>
             <Route path='/home' element={<Home />} />
             <Route path='/login' element={<Login />} />
